@@ -1,0 +1,188 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+#Logo
+{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement */
+}
+
+
+#illustration {
+    margin-left: 80px; /* Ajoute un espace entre l'image et le texte */
+    margin-top: 5%;
+    width: 80%;
+}
+
+
+.container h1 {
+    margin-left: 80px; /* Ajoute un espace entre l'image et le texte */
+    margin-top: 5%;
+    font-size: 4.5em;
+    color: white;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.container p {
+    margin-left: 80px; /* Ajoute un espace entre l'image et le texte */
+    margin-top: 5%;
+    font-size: 1.8em;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container a {
+    margin-left: 80px; /* Ajoute un espace entre l'image et le texte */
+    margin-top: 5%;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    border-radius: 70px;
+    padding: 10px 20px;
+    background-color: hsl(300, 69%, 71%);
+    transition: all 0.2s ease; /* Ajoute une transition pour une animation fluide */
+    display: flex; /* Permet d'utiliser le modèle flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+
+    /* Ajoute une taille plus grande à la boîte */
+    width: 250px;
+    height: 60px;
+}
+
+.container a:hover {
+    /* Ajoute une ombre autour de la boîte et agrandit le bouton */
+    box-shadow: 0px 0px 7px 0px hsl(0, 0%, 8%);
+    transform: scale(1.1); /* Agrandit le bouton de 10% au survol */
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(257, 40%, 49%);
+}
+
+.Footer {
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right side of the container */
+}
+
+.Footer a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.Footer img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    margin-right: 50px;
+    margin-top: 90%;
+    margin-bottom: 0;
+    transition: all 0.2s ease; /* Ajoute une transition pour une animation fluide */
+}
+
+.Footer img:hover {
+    transform: scale(1.1); /* Agrandit le bouton de 10% au survol */
+}
+
+
+@media (max-width: 375px) {
+    #Logo {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 50%;
+    }
+    #illustration {
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container h1 {
+        margin-left: 0;
+        margin-top: 20%;
+        font-size: 2.5em;
+        color: white;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .container p {
+        margin-left: 0;
+        margin-top: 20%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .container a {
+        margin-left: 0;
+        margin-top: 10%;
+        font-size: 1.2em;
+        color: white;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+        border-radius: 70px;
+        padding: 10px 20px;
+        background-color: hsl(300, 69%, 71%);
+        transition: all 0.2s ease; /* Ajoute une transition pour une animation fluide */
+        display: flex; /* Permet d'utiliser le modèle flexbox */
+        justify-content: center; /* Centre le contenu horizontalement */
+        align-items: center; /* Centre le contenu verticalement */
+
+        /* Ajoute une taille plus grande à la boîte */
+        width: 180px;
+        height: 35px;
+
+        /* Mettre au milieu de l'écran */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container a:hover {
+        /* Ajoute une ombre autour de la boîte et agrandit le bouton */
+        box-shadow: 0px 0px 7px 0px hsl(0, 0%, 8%);
+        transform: scale(1.1); /* Agrandit le bouton de 10% au survol */
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(257, 40%, 49%);
+    }
+    .Footer {
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Footer a {
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .Footer img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        margin-right: 50px;
+        transition: all 0.2s ease;
+    }
+    
+    .Footer img:hover {
+        transform: scale(1.1);
+    }
+}
